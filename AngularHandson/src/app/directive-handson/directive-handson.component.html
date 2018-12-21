@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <button class="btn btn-primary" (click)="onDisplayDetailsClick();">Display Details</button>
+      <p *ngIf="showDetails">never share these details with anyone!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div *ngFor="let log of logs" [ngClass]='{greenBackground:log>5}' [ngStyle]="{color:log>5?'white':'black'}">
+        <p> button clicked {{log}} time(s)</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 

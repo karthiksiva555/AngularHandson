@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 import { AppDatabindingComponent } from './app-databinding/app-databinding.component';
+import { DirectiveHandsonComponent } from './directive-handson/directive-handson.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AppDatabindingComponent } from './app-databinding/app-databinding.compo
     ServersComponent,
     WarningComponent,
     SuccessComponent,
-    AppDatabindingComponent
+    AppDatabindingComponent,
+    DirectiveHandsonComponent
   ],
   imports: [
     BrowserModule,
