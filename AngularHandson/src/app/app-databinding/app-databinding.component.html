@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <input type="text" [(ngModel)]='userName'/>
+
+  <p>Hi {{userName}}, How you doin!</p>
+  
+  <button class="btn btn-primary" (click)='resetUserName();' [disabled]='!userName'>Reset Username</button>
+</div>
+
